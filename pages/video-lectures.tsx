@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import styles from '../styles/VideoLectures.module.css';
 import Head from 'next/head';
+import Image from 'next/image';
 
 interface VideoLecture {
   id: string;
@@ -417,7 +418,13 @@ const VideoLectures = () => {
             {filteredVideos.map(video => (
               <div key={video.id} className={styles.videoCard} onClick={() => setSelectedVideo(video)}>
                 <div className={styles.thumbnailContainer}>
-                  <img src={video.thumbnail} alt={video.title} className={styles.thumbnail} />
+                  <Image
+                    src={video.thumbnail}
+                    alt={video.title}
+                    width={300}
+                    height={200}
+                    className={styles.thumbnail}
+                  />
                   <div className={styles.duration}>{video.duration}</div>
                 </div>
                 <div className={styles.videoContent}>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import styles from '../styles/Blogs.module.css';
 import Head from 'next/head';
+import Image from 'next/image';
 
 interface BlogPost {
   id: string;
@@ -147,7 +148,13 @@ const Blogs = () => {
           {filteredPosts.map(post => (
             <article key={post.id} className={styles.blogCard}>
               <div className={styles.imageContainer}>
-                <img src={post.image} alt={post.title} className={styles.blogImage} />
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  width={300}
+                  height={200}
+                  className={styles.blogImage}
+                />
               </div>
               <div className={styles.blogContent}>
                 <div className={styles.blogMeta}>

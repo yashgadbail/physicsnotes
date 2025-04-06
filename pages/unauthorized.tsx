@@ -8,7 +8,7 @@ const Unauthorized = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <h1>Unauthorized Access</h1>
-        <p>You don't have permission to access this page.</p>
+        <p>You don&apos;t have permission to view this page.</p>
         <button onClick={() => router.push('/')} className={styles.button}>
           Go to Home
         </button>
