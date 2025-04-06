@@ -1,0 +1,357 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.backButton {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.backButton:hover {
+  color: #2563eb;
+}
+
+.container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.description {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.classGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.classCard {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+}
+
+.classCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-color: #3b82f6;
+}
+
+.classHeader {
+  margin-bottom: 1rem;
+}
+
+.classHeader h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.classFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.chapterCount {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.chapterGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chapterCard {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chapterCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-color: #3b82f6;
+}
+
+.chapterHeader {
+  margin-bottom: 1rem;
+}
+
+.chapterHeader h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 1.25rem;
+}
+
+.chapterDescription {
+  color: #4b5563;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.chapterFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.questionCount {
+  color: #3b82f6;
+  font-weight: 500;
+}
+
+.questionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.questionCard {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.questionCard h3 {
+  color: #1f2937;
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+}
+
+.questionCard p {
+  color: #374151;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #f9fafb;
+}
+
+.option:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.option input[type="radio"] {
+  margin-right: 0.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+.option.selected {
+  background: #e0e7ff;
+  border-color: #3b82f6;
+  color: #1e40af;
+}
+
+.option.correct {
+  background: #dcfce7;
+  border-color: #22c55e;
+  color: #166534;
+}
+
+.option.incorrect {
+  background: #fee2e2;
+  border-color: #ef4444;
+  color: #991b1b;
+}
+
+.explanation {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f3f4f6;
+  border-radius: 0.5rem;
+  border-left: 4px solid #3b82f6;
+}
+
+.explanation p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.submitButton {
+  padding: 0.875rem 2rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submitButton:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.submitButton:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.resultContainer {
+  text-align: center;
+  width: 100%;
+}
+
+.score {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.resultActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.explanationButton,
+.resetButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.explanationButton {
+  background: #f3f4f6;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+}
+
+.explanationButton:hover {
+  background: #e5e7eb;
+}
+
+.resetButton {
+  background: #3b82f6;
+  color: white;
+  border: none;
+}
+
+.resetButton:hover {
+  background: #2563eb;
+}
+
+.timer {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #dc2626;
+  background-color: #fee2e2;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .classGrid,
+  .chapterGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .classCard,
+  .chapterCard {
+    padding: 1rem;
+  }
+
+  .questionCard {
+    padding: 1rem;
+  }
+
+  .option {
+    padding: 0.625rem 0.875rem;
+  }
+
+  .submitButton,
+  .explanationButton,
+  .resetButton {
+    width: 100%;
+  }
+
+  .resultActions {
+    flex-direction: column;
+  }
+} 

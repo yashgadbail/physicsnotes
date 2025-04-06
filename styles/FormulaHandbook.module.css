@@ -1,0 +1,287 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.sidebar {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.searchContainer {
+  margin-bottom: 1.5rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.chapters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chapterButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chapterButton:hover {
+  background: #f8f9fa;
+}
+
+.chapterButton.active {
+  background: #3498db;
+  border-color: #3498db;
+  color: white;
+}
+
+.chapterTitle {
+  font-weight: 500;
+}
+
+.formulaCount {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+.mainContent {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulasGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.formulaCard {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.formulaCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulaHeader {
+  margin-bottom: 1rem;
+}
+
+.formulaTitle {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.formulaExpression {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+
+.formulaDescription {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.formulaFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.units {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.viewDetails {
+  color: #3498db;
+  font-weight: 500;
+}
+
+.formulaDetail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #3498db;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.backButton:hover {
+  text-decoration: underline;
+}
+
+.formulaSections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.section {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.sectionContent {
+  color: #666;
+  line-height: 1.6;
+}
+
+.applicationsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.applicationItem {
+  padding: 0.5rem 0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.applicationItem::before {
+  content: '•';
+  color: #3498db;
+}
+
+.examplesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.example {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+
+.problem {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.solution {
+  color: #666;
+  font-family: monospace;
+  background: #f8f9fa;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.relatedFormulas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.relatedFormula {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .formulasGrid {
+    grid-template-columns: 1fr;
+  }
+} 

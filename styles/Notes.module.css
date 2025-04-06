@@ -1,0 +1,239 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.classSelector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.classButton {
+  padding: 0.8rem 2rem;
+  border: 2px solid #3498db;
+  background: white;
+  color: #3498db;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.classButton:hover {
+  background: #f0f7ff;
+}
+
+.classButton.active {
+  background: #3498db;
+  color: white;
+}
+
+.chaptersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.chapterCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.chapterCard:hover {
+  transform: translateY(-5px);
+}
+
+.chapterCard h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.chapterCard p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.downloadButton {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.downloadButton:hover {
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  transform: translateY(-2px);
+}
+
+.pdfChatOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  z-index: 1000;
+  padding: 20px;
+  gap: 20px;
+}
+
+.pdfViewerContainer {
+  flex: 0.7;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 0;
+}
+
+.pdfViewer {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #fff;
+  display: block;
+}
+
+/* Simple scrollbar styling */
+.pdfViewer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.pdfViewer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.pdfViewer::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.pdfViewer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Hide download button */
+.pdfViewer::after {
+  display: none !important;
+}
+
+/* Disable context menu */
+.pdfViewer {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pdfError {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pdfError p {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.pdfError .closeButton {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pdfError .closeButton:hover {
+  background-color: #0056b3;
+}
+
+/* Add styles for the chat container */
+.chatContainer {
+  flex: 0.3; /* 30% of the space */
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .container h1 {
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .chaptersGrid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .chapterCard {
+    padding: 1.5rem;
+  }
+
+  .pdfChatOverlay {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .pdfViewerContainer {
+    flex: 0.7;
+    height: 70vh;
+  }
+
+  .chatContainer {
+    flex: 0.3;
+    height: 30vh;
+  }
+} 
