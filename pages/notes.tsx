@@ -21,25 +21,25 @@ const notes: ClassNotes[] = [
       {
         id: 'units',
         title: 'Units and Measurements',
-        pdfUrl: '/pdfs/class11/units.pdf',
+        pdfUrl: '/physicsnotes/pdfs/class11/units.pdf',
         description: 'Fundamental and derived units, dimensional analysis, and measurement techniques.'
       },
       {
         id: 'motion',
         title: 'Motion in a Straight Line',
-        pdfUrl: '/pdfs/class11/motion.pdf',
+        pdfUrl: '/physicsnotes/pdfs/class11/motion.pdf',
         description: 'Kinematics, equations of motion, and graphical analysis.'
       },
       {
         id: 'laws',
         title: 'Laws of Motion',
-        pdfUrl: '/pdfs/class11/laws.pdf',
+        pdfUrl: '/physicsnotes/pdfs/class11/laws.pdf',
         description: 'Newton\'s laws, friction, and applications.'
       },
       {
         id: 'work',
         title: 'Work, Energy and Power',
-        pdfUrl: '/pdfs/class11/work.pdf',
+        pdfUrl: '/physicsnotes/pdfs/class11/work.pdf',
         description: 'Work-energy theorem, conservation of energy, and power.'
       }
     ]
@@ -50,25 +50,25 @@ const notes: ClassNotes[] = [
       {
         id: 'electrostatics',
         title: 'Electrostatics',
-        pdfUrl: '/pdfs/class12/electrostatics.pdf',
+        pdfUrl: '/physicsnotes/pdfs/class12/electrostatics.pdf',
         description: 'Electric charges, Coulomb\'s law, and electric fields.'
       },
       {
         id: 'current',
         title: 'Current Electricity',
-        pdfUrl: '/pdfs/class12/current.pdf',
+        pdfUrl: '/physicsnotes/pdfs/class12/current.pdf',
         description: 'Ohm\'s law, Kirchhoff\'s laws, and electrical circuits.'
       },
       {
         id: 'magnetism',
         title: 'Magnetism',
-        pdfUrl: '/pdfs/class12/magnetism.pdf',
+        pdfUrl: '/physicsnotes/pdfs/class12/magnetism.pdf',
         description: 'Magnetic fields, Biot-Savart law, and electromagnetic induction.'
       },
       {
         id: 'optics',
         title: 'Ray Optics',
-        pdfUrl: '/pdfs/class12/optics.pdf',
+        pdfUrl: '/physicsnotes/pdfs/class12/optics.pdf',
         description: 'Reflection, refraction, and optical instruments.'
       }
     ]

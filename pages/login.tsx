@@ -78,12 +78,6 @@ const Login = () => {
             Login
           </button>
         </form>
-
-        <div className={styles.demoCredentials}>
-          <h3>Demo Credentials:</h3>
-          <p>Admin: admin@physicsnotes.com / admin123</p>
-          <p>User: user@physicsnotes.com / user123</p>
-        </div>
       </div>
     </div>
   );

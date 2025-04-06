@@ -1,4 +1,5 @@
 import styles from '../styles/Features.module.css';
+import Link from 'next/link';
 
 const features = [
   {
@@ -51,12 +52,12 @@ const Features = () => {
       <h2>What We Offer</h2>
       <div className={styles.featuresGrid}>
         {features.map((feature, index) => (
-          <a key={index} href={feature.link} className={styles.featureCard}>
+          <Link key={index} href={feature.link} className={styles.featureCard}>
             <div className={styles.icon}>{feature.icon}</div>
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
             <div className={styles.stats}>{feature.stats}</div>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
