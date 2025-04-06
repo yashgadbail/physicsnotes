@@ -31,7 +31,6 @@ jobs:
       
     - name: Build project
       run: |
-        echo "BASE_PATH=/$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)" >> $GITHUB_ENV
         npm run build
         touch ./out/.nojekyll
         
