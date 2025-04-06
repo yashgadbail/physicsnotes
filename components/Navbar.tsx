@@ -26,16 +26,16 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <Link href="/">PhysicsNotes</Link>
+        <Link href="/physicsnotes">PhysicsNotes</Link>
       </div>
       <div className={styles.navLinks}>
-        <Link href="/notes">Notes</Link>
-        <Link href="/dpp">DPP</Link>
-        <Link href="/blogs">Blogs</Link>
-        <Link href="/formula-handbook" className={styles.navLink}>
-          Formulas
-        </Link>
-        <Link href="/exam-preparation">Exam Prep</Link>
+        <Link href="/physicsnotes" className={styles.navLink}>Home</Link>
+        <Link href="/physicsnotes/notes" className={styles.navLink}>Notes</Link>
+        <Link href="/physicsnotes/dpp" className={styles.navLink}>DPP</Link>
+        <Link href="/physicsnotes/blogs" className={styles.navLink}>Blogs</Link>
+        <Link href="/physicsnotes/formula-handbook" className={styles.navLink}>Formulas</Link>
+        <Link href="/physicsnotes/exam-preparation" className={styles.navLink}>Exam Prep</Link>
+        <Link href="/physicsnotes/login" className={styles.navLink}>Login</Link>
         
         {isAuthenticated ? (
           <>
@@ -46,7 +46,7 @@ const Navbar = () => {
             </button>
           </>
         ) : (
-          <Link href="/login" className={styles.loginLink}>
+          <Link href="/physicsnotes/login" className={styles.loginLink}>
             Login for Premium Content
           </Link>
         )}
