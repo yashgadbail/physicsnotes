@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/DPP.module.css';
+import Navbar from '../components/Navbar';
 import Head from 'next/head';
 
 interface Question {
@@ -357,6 +358,7 @@ export default function DPP() {
           <meta name="description" content="Daily practice problems and exercises for physics" />
           <meta name="copyright" content="© 2024 PhysicsNotes. All rights reserved." />
         </Head>
+        <Navbar />
         <div className={styles.container}>
           <h1>Daily Practice Problems</h1>
           <p className={styles.description}>Select your class to start practicing</p>

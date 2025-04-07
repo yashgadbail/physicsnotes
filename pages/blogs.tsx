@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from '../styles/Blogs.module.css';
 import Head from 'next/head';
 import Image from 'next/image';
-
+import Navbar from '../components/Navbar';
 interface BlogPost {
   id: string;
   title: string;
@@ -113,6 +113,7 @@ const Blogs = () => {
         <meta name="description" content="Physics blogs and articles" />
         <meta name="copyright" content="© 2024 PhysicsNotes. All rights reserved." />
       </Head>
+      <Navbar />
       <div className={styles.container}>
         <div className={styles.header}>
           <h1 className={styles.headerTitle}>Physics Blogs</h1>

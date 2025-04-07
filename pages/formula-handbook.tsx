@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Link from 'next/link';
 import styles from '../styles/FormulaHandbook.module.css';
 import Head from 'next/head';
+import Navbar from '../components/Navbar';
 
 interface Formula {
   id: string;
@@ -121,6 +121,7 @@ const FormulaHandbook = () => {
         <meta name="description" content="Comprehensive physics formulas and derivations" />
         <meta name="copyright" content="© 2024 PhysicsNotes. All rights reserved." />
       </Head>
+      <Navbar />
       <div className={styles.container}>
         <div className={styles.header}>
           <h1 className={styles.title}>Physics Formula Handbook</h1>

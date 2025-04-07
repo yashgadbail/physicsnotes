@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from '../styles/ExamPreparation.module.css';
 import Head from 'next/head';
+import Navbar from '../components/Navbar';
 
 interface StudyMaterial {
   id: string;
@@ -264,6 +265,7 @@ const ExamPreparation = () => {
         <meta name="description" content="Physics exam preparation materials and resources" />
         <meta name="copyright" content="© 2024 PhysicsNotes. All rights reserved." />
       </Head>
+      <Navbar />
       <div className={styles.container}>
         <div className={styles.header}>
           <h1 className={styles.headerTitle}>Exam Preparation</h1>

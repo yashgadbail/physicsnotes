@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react';
 import styles from '../styles/Notes.module.css';
 import PdfChat from '../components/PdfChat';
+import Navbar from '../components/Navbar';
+import Head from 'next/head';
 
 interface Chapter {
   id: string;
@@ -87,6 +89,14 @@ const Notes = () => {
   };
 
   return (
+    <>
+    <Head>
+      <title>PhysicsNotes - Notes</title>
+      <meta name="description" content="Daily practice problems and exercises for physics" />
+      <meta name="copyright" content="© 2024 PhysicsNotes. All rights reserved." />
+    </Head>
+    <Navbar />
+    
     <div className={styles.container}>
       <h1>Physics Notes</h1>
       <p className={styles.description}>Comprehensive notes for Class 11 and 12 Physics</p>
@@ -146,6 +156,7 @@ const Notes = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 
